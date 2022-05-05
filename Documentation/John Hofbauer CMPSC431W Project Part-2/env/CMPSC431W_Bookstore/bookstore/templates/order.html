@@ -1,0 +1,21 @@
+{% block title %}
+Login Here
+{% endblock %}
+
+Order
+
+{% block content %}
+<form method="post" class="from-group">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-sucess">Place Order</button>
+</form>
+
+
+
+{% for message in messages %}
+    <p id="messages">{{message}}</p> 
+{% endfor %}
+
+
+{% endblock %}

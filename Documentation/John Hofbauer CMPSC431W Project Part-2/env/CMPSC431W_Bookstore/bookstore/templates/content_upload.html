@@ -1,0 +1,10 @@
+<p>bookID	title	authors	average_rating	isbn	isbn13	language_code	  num_pages	ratings_count	text_reviews_count	publication_date	publisher
+</p>
+{{order}}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label> Upload a file </label>
+    <input type="file" name="file">
+    <p>Only accept CSV</p>
+    <button type="Submit"> Upload </button>
+</form>
